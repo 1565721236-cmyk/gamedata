@@ -1,8 +1,4 @@
-// 游戏详情数据接口
-// 游戏列表数据接口
-// 分类数据接口
-  
-  // 所有游戏的详情数据
+
   export const gameDetails = [
     {
       id: 135,
@@ -57,15 +53,6 @@
       rating: 4,
       downloads: '15.8K',
       category: 'kids'
-    },
-    {
-      id: 86,
-      name: 'Demon-Slaying',
-      image: 'icons/86.jpg',
-      description: 'Become a legendary demon slayer! Master powerful combat techniques, upgrade your weapons, and defeat evil forces in this action-packed sports game.',
-      rating: 5,
-      downloads: '8.9K',
-      category: 'sports'
     },
     {
       id: 72,
@@ -644,15 +631,6 @@
       category: 'sports'
     },
     {
-      id: 96,
-      name: 'Classic Same Number Honeycomb Elimination',
-      image: 'icons/96.jpg',
-      description: 'Eliminate honeycomb blocks with the same numbers in this classic sports puzzle game! Create strategies and clear the board.',
-      rating: 4,
-      downloads: '17.3K',
-      category: 'sports'
-    },
-    {
       id: 37,
       name: 'Stick Soldier',
       image: 'icons/37.jpg',
@@ -879,14 +857,11 @@
     }
   ]
   
-  // 根据游戏ID获取详情数据
   export function getGameDetail(id) {
-    // 将字符串ID转换为数字进行比较
     const numericId = parseInt(id, 10);
     return gameDetails.find(game => game.id === numericId) || null;
   }
   
-  // 根据游戏ID创建默认详情数据
   export function createDefaultGameDetail(id) {
     return {
       id,
