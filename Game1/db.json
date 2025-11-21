@@ -1,5 +1,25 @@
 [
   {
+    "info1": [
+      "action",
+      "adventure",
+      "racing",
+      "puzzle",
+      "sports",
+      "girl",
+      "kids"
+    ],
+    "info2": [
+      "puzzle",
+      "sports",
+      "action",
+      "adventure",
+      "racing",
+      "girl",
+      "kids"
+    ]
+  },
+  {
     "id": 135,
     "name": "Items of Mecha Black Samurai",
     "image": "./icons/135.jpg",
